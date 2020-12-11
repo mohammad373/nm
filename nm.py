@@ -42,7 +42,7 @@ def __web__():
         except:
             pass
     else:
-        try:
+
             print(Fore.GREEN + "[*] ~ Your Target Is WordPress ;)")
             time.sleep(1)
             for i in my_list:
@@ -53,6 +53,5 @@ def __web__():
                     else:
                         print(Fore.GREEN + w + Fore.YELLOW + " > " + Fore.BLUE + "Found ;)")
                     
-        except:
-            pass
+
 __web__()
