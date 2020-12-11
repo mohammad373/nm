@@ -15,7 +15,7 @@ def __web__():
     time.sleep(1)
     print(Fore.YELLOW + "Hello . Welcome Back ;)")
     time.sleep(1)
-    target = input(Fore.BLUE + "\n[" + Fore.RED + "*" + Fore.BLUE + "]" + Fore.RED = " ~ " + Fore.YELLOW + "Pleass Enter The address Target " + Fore.GREEN + "==>  ")
+    target = input(Fore.BLUE + "\n[" + Fore.RED + "*" + Fore.BLUE + "]" + Fore.RED + " ~ " + Fore.YELLOW + "Pleass Enter The address Target " + Fore.GREEN + "==>  ")
     if target == "" or None:
         try:
             time.sleep(1)
