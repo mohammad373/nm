@@ -43,15 +43,12 @@ if r.status_code == 404 or r.status_code == 500:
             pass
 else:
 
-            print(Fore.GREEN + "[*] ~ Your Target Is WordPress ;)")
-            time.sleep(1)
-            for i in my_list:
-                try:
-                    w = target + "/" + "/wp-content/plugins/" + i
-                    if w.status_code == 404 or w.status_code == 500:
-                        print(Fore.RED + w + Fore.YELLOW + " > " + Fore.BLUE + "Not Found ;(")
-                    else:
-                        print(Fore.GREEN + w + Fore.YELLOW + " > " + Fore.BLUE + "Found ;)")
-                    
-
-
+        print(Fore.GREEN + "[*] ~ Your Target Is WordPress ;)")
+        time.sleep(1)
+        for i in my_list:
+            try:
+                w = target + "/" + "/wp-content/plugins/" + i
+                if w.status_code == 404 or w.status_code == 500:
+                    print(Fore.RED + w + Fore.YELLOW + " > " + Fore.BLUE + "Not Found ;(")
+                else:
+                    print(Fore.GREEN + w + Fore.YELLOW + " > " + Fore.BLUE + "Found ;)")
